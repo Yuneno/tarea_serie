@@ -1,0 +1,7 @@
+{
+  "name": "tarea_serie",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
