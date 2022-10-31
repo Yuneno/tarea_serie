@@ -1,0 +1,137 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Personajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <h4>Estos son mis personasjes favoritos realmente (el unico que no me gusta es starfire)</h4>
+  </ion-item>
+
+  <swiper [autoplay]="true" [keyboard]="true" [pagination]="true" [scrollbar]="true" [zoom]="true">
+    <ng-template swiperSlide>
+
+      <ion-label id="click-trigger" style="width:300px; height:280px;"> <img src="assets/imagenes/robin.jpg" width="220"
+          height="320" style="
+          position:relative;
+          padding-left: 10px;
+          padding:10px;
+        ">
+      </ion-label>
+      <ion-popover trigger="click-trigger" triggerAction="click">
+        <ng-template>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Robin</ion-card-title>
+              <ion-card-subtitle>Lider de los jovenes Titanes</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <p>
+                Robin, también conocido como Richard Grayson, es fundador y líder de los Teen Titans. Durante los años
+                anteriores a la fundación de los Titans, fue entrenado por Batman para ser su ayudante, es doblado por
+                Ángel de Gracia y en la versión latinoamericana, por Ezequiel Serrano.
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ng-template>
+      </ion-popover>
+    </ng-template>
+
+    <ng-template swiperSlide>
+
+      <ion-label id="click-trigger1" style="width:300px; height:280px;"> <img src="assets/imagenes/Raven.webp"
+          width="120" height="200" style="
+          position:relative;
+          padding-left: 10px;
+          padding:10px;
+        ">
+      </ion-label>
+      <ion-popover trigger="click-trigger1" triggerAction="click">
+        <ng-template>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Raven</ion-card-title>
+              <ion-card-subtitle>Híbrido Humano-Demonio</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              Raven es uno de los personajes principales de Los Jóvenes Titanes. Es una híbrida humano-demonio,
+              originaria de la dimensión paralela de Azarath. Y es una de los cinco miembros fundadores de los Jóvenes
+              Titanes.
+            </ion-card-content>
+          </ion-card>
+        </ng-template>
+      </ion-popover>
+
+
+    </ng-template>
+
+    <ng-template swiperSlide>
+
+      <ion-label id="click-trigger2" style="width:300px; height:280px;"> <img src="assets/imagenes/Cyborg.webp"
+          width="160" height="320" style="
+              position:relative;
+              padding-left: 10px;
+              padding:10px;
+            ">
+      </ion-label>
+      <ion-popover trigger="click-trigger2" triggerAction="click">
+        <ng-template>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Cyborg</ion-card-title>
+              <ion-card-subtitle>
+                En verdad es otro híbrido pero eso Cyborg
+              </ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              Victor Stone, conocido como Cyborg es un miembro de los Jóvenes Titanes. Cyborg es el relajado mitad
+              robot-humano, que le importa más la pizza y los videojuegos que los delincuentes y villanos. Él es el
+              Titan número 4 y conocido por ser el mejor amigo de Chico Bestia.
+            </ion-card-content>
+          </ion-card>
+        </ng-template>
+      </ion-popover>
+
+
+    </ng-template>
+
+    <ng-template swiperSlide>
+
+      <ion-label id="click-trigger3" style="width:300px; height:280px;"> <img src="assets/imagenes/beast_boy.jpg"
+          width="160" height="320" style="
+              justify-content: center;
+              margin-top: 25px;
+              
+            ">
+      </ion-label>
+      <ion-popover trigger="click-trigger3" triggerAction="click">
+        <ng-template>
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Chico Bestia</ion-card-title>
+              <ion-card-subtitle>Una especie rara de San Juanero que se trasnforma en animales</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              Chico Bestia es un joven de catorce años el cual posee el poder de cambiar su forma fisica tranformandose
+              en animales (No importa si están vivos o extintos) que el haya visto o sepa como son. Chico Bestia es el
+              número 4 de los Jóvenes Titanes, tiene un buen sentido de humor y siempre esta bromeando cosa que a Terra
+              le gusta mucho pero a Raven no ya que siempre le molestan sus bromas.
+            </ion-card-content>
+          </ion-card>
+        </ng-template>
+      </ion-popover>
+
+
+    </ng-template>
+
+  </swiper>
+
+  <ion-item>
+    <h1>Dale clik a la imagen para ver la información del personaje</h1>
+  </ion-item>
+</ion-content>

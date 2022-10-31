@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Portada</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <H1>Los Jovenes titanes</H1>
+
+    
+  </ion-item>
+
+  <swiper [autoplay]="true" [keyboard]="true" [pagination]="true" [scrollbar]="true" [zoom]="true">
+    <ng-template swiperSlide ><img src="assets/imagenes/teentitans1.webp"  
+      
+      style="
+        max-width: 300px;
+        max-height: 180px;
+        border-radius: 1.6%;
+        ">
+    
+
+    </ng-template>
+
+    
+    <ng-template swiperSlide><img src="assets/imagenes/img1.jpg"  
+      
+      style="
+        max-width: 300px;
+        max-height: 180px;
+        border-radius: 1.6%;
+        "></ng-template>
+    
+  </swiper>
+
+  <h3>Sinopsis</h3>
+
+  <p>Robin, Ciborg, Chico Bestia, Starfire y Raven forman los Teen Titans, un grupo de jóvenes que lucha contra el crimen en Jump City. Juntos deberán resolver todo tipo de situaciones causadas por los villanos más temibles, o incluso, algún desastre originado por ellos mismos.</p>
+
+</ion-content>
